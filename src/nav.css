@@ -1,0 +1,13 @@
+.custom-navbar {
+  background: #1B9DFF;
+}
+
+.custom-navbar a {
+  color: #fff;
+}
+
+.custom-navbar a.active {
+  background-color: #1F6BEF;
+}
+
+

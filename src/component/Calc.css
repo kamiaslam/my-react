@@ -1,0 +1,32 @@
+.container {
+    width: 300px;
+    margin: 0 auto;
+    /* border: 2px solid red; */
+}
+
+.txt {
+    width: 300px;
+    font-size: 20px;
+    padding: 10px;
+}
+button {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    float: left;
+    cursor: pointer;
+    margin: 5px;
+}
+.clear {
+    clear: both;
+}
+.btn.clear {
+   width: 230px;
+}
+.calculator__display {
+    min-height: 50px;
+    width: 240px;
+    background: ivory;
+    border: 1px solid #ccc;
+    padding: 5px;
+}
