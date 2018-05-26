@@ -1,16 +1,32 @@
 import React, { Component } from 'react';
 import './App.css';
-import Profile from './component/Profile';
+import axios from 'axios';
+import PeopleList from './component/PeopleList';
 
 
 class App extends Component {
+
+    state = {
+      people : []
+    }
+  
+  
+  componentWillMount(){
+    axios.get(`https://jsonplaceholder.typicode.com/users`)
+    .then(res => {
+      // console.log(res);
+      this.setState({
+        people: res.data
+      })
+    })
+  }
+
   render() {
+    // console.log(this.state.people)
     return (
-        <div className="my-wrapper">
-          <div className="container-fluid">
-            <div className="row justify-content-md-center">
-                <Profile />
-            </div>
+        <div className="app-container">
+          <div className="data-container">
+            <PeopleList data={this.state.people}  />
           </div>
         </div>
     )

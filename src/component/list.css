@@ -1,0 +1,17 @@
+.blockList {
+    padding: 10px;
+    background: khaki;
+    border: 2px solid red;
+    margin: 10px;
+    float: left;
+}
+
+ul {
+    list-style: none;
+}
+
+span {
+    display: inline-block;
+    font-weight: bold;
+    padding-right: 10px;
+}
